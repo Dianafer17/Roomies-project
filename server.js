@@ -8,7 +8,7 @@ const db = require('./database'); // Ajusta la ruta según tu proyecto
 console.log('Estado de la conexión a la base de datos:', db);
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 // Middleware
 app.use(cors());
